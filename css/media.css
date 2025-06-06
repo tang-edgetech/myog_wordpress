@@ -1,0 +1,230 @@
+@media (max-width: 767px){
+    .ast-separate-container #content .ast-container{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .myog-product-insights .myog-insights {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    .myog-product-insights .myog-insights .myog-insight .myog-insight-inner {
+        flex-direction: row;
+        gap: 16px;
+        border-radius: 16px;
+        padding: 12px 30px;
+    }
+    .myog-insight-thumbnail {
+        min-width: 60px;
+        width: 60px;
+        min-height: 60px;
+        height: 60px;
+        padding: 4px;
+        margin-left: 0;
+    }
+    .myog-product-insights .myog-insights .myog-insight-cta {
+        width: 100%;
+    }
+    .myog-product-insights .myog-insights .myog-insight-cta a, .myog-product-insights .myog-insights .myog-insight-cta .btn, .myog-product-insights .myog-insights .myog-insight-cta a.btn {
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+    .myog-product-insights .myog-insight:nth-child(n+4) {
+        display: none;
+    }
+    .myog-modules-insights {
+        padding: 0 25px;
+    }
+    .myog-modules-insights .myog-insight-accordion .myog-insight-content {
+        text-align: left;
+        gap: 0;
+    }
+    .myog-modules-insights .myog-insight-accordion .myog-insight-title {
+        font-weight: 700;
+        font-size: 3.95349vw;
+    }
+    .myog-modules-insights .myog-insight-accordion .myog-insight-number {
+        font-weight: 400;
+        font-size: 3.48837vw;
+    }
+}
+@media (min-width: 768px){
+    .form-group:not(.full){
+        max-width: calc( 50% - 25px );
+    }
+    .myog-blog-grid .grid-item.grid-item-error{
+        max-width: 100%;
+    }
+    .myog-tkp-packages{
+        gap: 50px 20px;
+    }
+    .myog-tkp-packages .grid-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+	.woocommerce .col2-set > .col-1, .woocommerce .col2-set > .col-2 {
+		max-width: 50%;
+	}
+    .myog-modules-insights .myog-module-nav {
+        max-width: 80%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .myog-insight-title {
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .myog-blog-grid{
+        gap: 50px;
+    }
+    .myog-blog-grid .grid-item{
+        max-width: calc( 50% - 30px ); 
+    }
+}
+@media (max-width: 991px){}
+@media (min-width: 992px){
+    .myog-blog-grid .grid-item{
+        max-width: calc( 33.333333% - 30px ); 
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .myog-blog-wrapper{
+        padding: 50px 0;
+    }
+    .myog-tkp-header{
+        padding-left: 15%;
+    }
+    .myog-tkp-packages .grid-item{
+        max-width: calc( 33.3333333% - 15px ); 
+    }
+    .ast-no-sidebar #primary {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1199px){
+    .related-blog-wrapper{
+        border-top: 1px solid #358C9A;
+    }
+    footer#colophon .footer-menu.elementor-widget-navigation-menu .hfe-nav-menu .hfe-nav-menu li:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .myog-product-insights .myog-insights {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1200px){
+    .ast-no-sidebar #primary {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .related-blog-wrapper{
+        border-left: 1px solid #358C9A;
+    }
+    .myog-tkp-header{
+        padding-left: 10%;
+    }
+    .myog-tkp-packages .grid-item{
+        max-width: calc( 25% - 15px ); 
+    }
+    .myog-product-insights .myog-insight-header {
+        padding: 0 60px;
+    }
+    .myog-insight-title {
+        font-size: 1.302083vw;
+        line-height: 1.666667vw;
+        min-height: 4.9479167vw;
+        margin-bottom: 6px;
+    }
+    .myog-insight-number {
+        font-size: 0.9375vw;
+        line-height: 1.14583vw;
+    }
+    .myog-insight-cta .btn {
+        font-size: 0.885416vw;
+        line-height: 1.041667vw;
+    }
+    .product .myog-features-title {
+        font-size: 1.3021vw;
+        line-height: 1.5625vw;
+    }
+    .myoc-iac-title .iac-product-title {
+        font-size: 1.04167vw;
+        line-height: 1.19792vw;
+    }
+    .myoc-iac-title .iac-product-price, .myoc-iac-title .iac-product-price * {
+        font-size: 2.0833vw;
+        line-height: 2.604167vw;
+    }
+}
+@media (max-width: 1399px){}
+@media (min-width: 1400px) {
+    .col-xxl-1 {
+        flex: 0 0 8.33333333%;
+        max-width: 8.33333333%;
+    }
+    .col-xxl-2 {
+        flex: 0 0 16.66666667%;
+        max-width: 16.66666667%;
+    }
+    .col-xxl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-xxl-4 {
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+    }
+    .col-xxl-5 {
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+    .col-xxl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xxl-7 {
+        flex: 0 0 58.33333333%;
+        max-width: 58.33333333%;
+    }
+    .col-xxl-8 {
+        flex: 0 0 66.66666667%;
+        max-width: 6666666667%;
+    }
+    .col-xxl-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xxl-10 {
+        flex: 0 0 83.33333333%;
+        max-width: 83.33333333%;
+    }
+    .col-xxl-11 {
+        flex: 0 0 91.66666667%;
+        max-width: 91.66666667%;
+    }
+    .col-xxl-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 1599px){}
+@media (min-width: 1600px){}
+@media (min-width: 1800px){
+    /* main .e-con>.e-con-inner, main .e-con>.e-con-full[data-element_type='container'], main .contaniner {
+        max-width: 1440px;
+        width: 100%;
+    } */
+}
+@media (min-width: 1900px){}
+@media (min-width: 768px) and (max-width: 991px){}
+@media (min-width: 768px) and (max-width: 1199px){}
+@media (min-width: 992px) and (max-width: 1199px){}
+@media (min-width: px) and (max-width: px){}
+@media (min-width: px) and (max-width: px){}
+@media (min-width: px) and (max-width: px){}

@@ -1,0 +1,93 @@
+.woocommerce.woocommerce-account-verification .myog-page-title {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.woocommerce.woocommerce-account-verification .myog-page-title h2, .woocommerce-form.woocommerce-request-otp .woocommerce-form-row p:last-child, .woocommerce-form .woocommerce-form-dialog p:last-child {
+    margin-bottom: 0;
+}
+.woocommerce-form.woocommerce-verify-otp, .woocommerce-form.woocommerce-reset-verification-method {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    gap: 30px;
+}
+.woocommerce-form.woocommerce-request-otp, .woocommerce-form.woocommerce-form-change-email {
+    gap: 30px;
+}
+.woocommerce-verification-methods, .woocommerce-account-change-email, .woocommerce-account-change-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.woocommerce-form.woocommerce-verification-method button[type='submit'], .woocommerce-account-change-email  button[type='submit'], .woocommerce-account-change-mobile  button[type='submit'],
+.woocommerce-form.woocommerce-request-otp button[type='submit'], .woocommerce-form.woocommerce-verify-otp button[type='submit'] {
+    margin: auto;
+}
+.woocommerce-otp-email-verification .woocommerce-form-row #security_code, .woocommerce-account-change-email, .woocommerce-account-change-mobile {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+.otp-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.otp-field {
+    max-width: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.woocommerce-otp-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: relative;
+}
+.woocommerce-otp-forms > div {
+    position: relative;
+}
+.woocommerce-otp-forms > div:not(:last-child)::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: #d1d1d1;
+    left: 0;
+    bottom: -35px;
+}
+.woocommerce .error-otp {
+    display: none;
+    color: #ff0000;
+    text-align: center;
+    font-size: 90%;
+    margin-top: -10px;
+}
+.woocommerce .error-otp.success {
+    color: #00b100;
+}
+.woocommerce-verify-otp .request-otp, .woocommerce-verify-otp .request-otp:hover, .woocommerce-verify-otp .request-otp:focus, .woocommerce-account-change-email .request-otp, .woocommerce-account-change-email .request-otp:hover, .woocommerce-account-change-email .request-otp:focus, .woocommerce-account-change-mobile .request-otp, .woocommerce-account-change-mobile .request-otp:hover, .woocommerce-account-change-mobile .request-otp:focus {
+    background: transparent;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #358C9A;
+    text-transform: initial;
+    display: inline-block;
+    width: max-content;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.woocommerce-verify-otp .request-otp:hover, .woocommerce-account-change-email .request-otp:hover, .woocommerce-account-change-mobile .request-otp:hover {
+    text-decoration: underline;
+}
+.woocommerce-form .request-otp.disabled {
+    pointer-events: none;
+    filter: grayscale(0.8);
+}

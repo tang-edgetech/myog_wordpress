@@ -1,0 +1,78 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-RegularItalic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-Semibold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-SemiboldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-ExtraboldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/wp-content/themes/astra-child/fonts/Gilroy-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
