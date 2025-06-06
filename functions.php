@@ -753,7 +753,7 @@ function myog_mobile_reset_password(WP_REST_Request $request) {
     if( empty($new_password) ) {
         return new WP_REST_Response(array(
             'status' => 2000,
-            'message' => 'The password is required!',
+            'message' => 'The new password is required!',
         ), 200);
     }
     
@@ -764,36 +764,56 @@ function myog_mobile_reset_password(WP_REST_Request $request) {
     }
     if ($user) {
         if( $type == '1' ) { // Reset password with current password
+            if( empty($current_password) ) {
+                return new WP_REST_Response(array(
+                    'status' => 2000,
+                    'message' => 'The current password is required!',
+                ), 200);
+            }
+            
             if( wp_check_password($current_password, $user->user_pass, $user->ID) ) {
                 wp_set_password($new_password, $user->ID);
 
                 return new WP_REST_Response(array(
                     'status' => 1000,
                     'message' => 'Successful!',
+                    'note' => 'Normal reset',
                 ), 200);
             }
             else {
                 return new WP_REST_Response(array(
                     'status' => 2000,
                     'message' => 'This current password is not match!',
+                    'note' => 'Normal reset',
                 ), 200);
             }
         }
         else if( $type == '2' ) { // Force reset password
-            wp_set_password($new_password, $user->ID);
-
-            // Double-check if the password was updated
-            $user_after = get_user_by('ID', $user->ID);
-            if (wp_check_password($new_password, $user_after->user_pass, $user_after->ID)) {
-                return new WP_REST_Response(array(
-                    'status' => 1000, 
-                    'message' => 'Password reset successfully.'
-                ), 200);
-            } else {
+            if (wp_check_password($new_password, $user->user_pass, $user->ID)) {
                 return new WP_REST_Response(array(
                     'status' => 2000,
-                    'message' => 'Failed to update the password!',
+                    'message' => 'This new password is the same as the current password!',
+                    'note' => 'Force reset',
                 ), 200);
+            }
+            else {
+                wp_set_password($new_password, $user->ID);
+
+                // Double-check if the password was updated
+                $user_after = get_user_by('ID', $user->ID);
+                if (wp_check_password($new_password, $user_after->user_pass, $user_after->ID)) {
+                    return new WP_REST_Response(array(
+                        'status' => 1000, 
+                        'message' => 'Password reset successfully.',
+                        'note' => 'Force reset',
+                    ), 200);
+                } else {
+                    return new WP_REST_Response(array(
+                        'status' => 2000,
+                        'message' => 'Failed to update the password!',
+                        'note' => 'Force reset',
+                    ), 200);
+                }
             }
         }
         else { // Illegal 
